@@ -1,0 +1,52 @@
+<!--pages/grade/grade.wxml-->
+<view>
+  <view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text' style='color:#66B3FF;'></text><text class='text-lg ml-xs'>成绩查询</text>
+  </view>
+</view>
+    <view class="weui-cells weui-cells_after-title">
+        <view class='weui-cell weui-cell_select'>
+          <view class='weui-cell__hd weui-cell__hd_in-select-after'>
+              <view class='weui-label'>学年</view>
+          </view>
+          <view class='weui-cell__bd'>
+              <picker bindchange='bindPickerChange1' value='{{yearIndex}}' range='{{year}}'>
+                  <view class='weui-select weui-select_in-select-after'>{{year[yearIndex]}}</view>
+              </picker>
+          </view>
+        </view>
+
+        <view class='weui-cell weui-cell_select'>
+          <view class='weui-cell__hd weui-cell__hd_in-select-after'>
+              <view class='weui-label'>学期</view>
+          </view>
+          <view class='weui-cell__bd'>
+              <picker bindchange='bindPickerChange2' value='{{termIndex}}' range='{{term}}'>
+                  <view class='weui-select weui-select_in-select-after'>{{term[termIndex]}}</view>
+              </picker>
+          </view>
+        </view>
+
+        <!-- <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_switch">
+                <view class="weui-cell__bd">未通过课程</view>
+                <view class="weui-cell__ft">
+                    <switch checked bindchange='switchChange'/>
+                </view>
+            </view>
+        </view> -->
+    </view>
+    <text>\n</text>
+
+    <!-- <view class="page__bd page__bd_spacing">
+          <button class="weui-btn" type="primary" bindtap='get_personalgrade'>查询</button>
+    </view>
+</view> -->
+        <view class="weui-btn-area">
+        <view class="doc-main">
+            <button class='primary btn mt-sm block lg' style='background-color:#66B3FF;'bindtap='get_personalgrade'>查询</button>
+            <button class='gray btn block lg' style='margin-top:5%' bindtap='back'>返回</button>
+            </view>
+        </view>
+        </view>

@@ -1,0 +1,55 @@
+
+
+  <view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text' style='color:#66B3FF;'></text><text class='text-lg ml-xs'>空教室查询</text>
+  </view>
+</view>
+
+  <view class="weui-cells weui-cells_after-title">
+      
+        <view class="weui-cell weui-cell_select section multipicker">
+          <view class="weui-cell__hd_in-select-after section__title"></view>
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{placeIndex}}" range="{{placeArray}}">
+            <view class="picker">
+              {{placeArray[0][placeIndex[0]]}}——{{subplaceArray[placeIndex[0]][placeIndex[1]]}}
+            </view>
+          </picker>
+        </view>
+
+      <view class='weui-cell weui-cell_select'>
+          <view class='weui-cell__hd weui-cell__hd_in-select-after'>
+              <view class='weui-label'>时间（周）：</view>
+          </view>
+          <view class='weui-cell__bd'>
+              <picker bindchange='bindPickerChange1' value='{{weekIndex}}' range='{{week}}'>
+                  <view class='weui-select weui-select_in-select-after'>{{week[weekIndex]}}</view>
+              </picker>
+          </view>
+      </view>
+
+      <view class='weui-cell weui-cell_select'>
+          <view class='weui-cell__hd weui-cell__hd_in-select-after'>
+              <view class='weui-label'>时间（日）：</view>
+          </view>
+          <view class='weui-cell__bd'>
+              <picker bindchange='bindPickerChange2' value='{{dayIndex}}' range='{{day}}'>
+                  <view class='weui-select weui-select_in-select-after'>{{day[dayIndex]}}</view>
+              </picker>
+          </view>
+      </view>
+
+  </view>
+
+  <text>\n</text>
+
+  <!-- <view class="page__bd page__bd_spacing">
+        <button class="weui-btn" type="primary" bindtap='test' bindtap='get_freeclassroom'>查询</button>
+  </view> -->
+  <view class="weui-btn-area">
+        <view class="doc-main">
+            <button class='primary btn mt-sm block lg' style='background-color:#66B3FF;'bindtap='get_freeclassroom'>查询</button>
+            <button class='gray btn block lg' style='margin-top:5%' bindtap='back'>返回</button>
+            </view>
+ 
+</view>

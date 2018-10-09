@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/info/info",
+    "pages/idtf/idtf",
+    "pages/class/date/date",
+    "pages/grade/grade",
+    "pages/timetable/timetable",
+    "pages/class/detail/detail",
+    "pages/grade/gradetable/gradetable"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#66B3FF",
+    "navigationBarTitleText": "WeLan-微兰",
+    "navigationBarTextStyle": "white"
+  }
+}

@@ -1,0 +1,41 @@
+<!--pages/home/home.wxml-->
+<!-- <view>
+  <view>
+    <swiper class='swiper' indicator-dots='true' autoplay='true' interval='5000' duration='1000'>
+      <swiper-item wx:for='{{movies}}'>
+        <image src='{{movies[index].url}}' class='slide-image' mode='aspectFill'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view>
+    <view class='weui-grids'>
+      <block wx:for='{{grids}}' wx:key='*this'>
+        <navigator url="{{grids[index].route}}" class="weui-grid" hover-class="weui-grid_active">
+          <image class="weui-grid__icon" src="{{grids[index].image}}" ></image> 
+          <view class="weui-grid__label">{{grids[index].text}}</view>
+        </navigator> 
+      </block>
+    </view>
+  </view>
+</view> -->
+
+
+<swiper class='swiper-bg' indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" indicator-active-color="#ff6600">
+  <swiper-item wx:for="{{movies}}">
+    <view class='shadow-alice'>
+      <image src="{{movies[index].url}}" mode='aspectFill' />
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="user-nav icon-nav-box">
+  <view class="icon-nav">
+    <block wx:for='{{grids}}' wx:key='*this'>
+      <navigator hover-class="weui-grid_active" class="icon-nav-navigator" url="{{grids[index].route}}">
+        <text class="iconfont icon-{{grids[index].icon}}"></text>
+        <text class="icon-nav-text">{{grids[index].text}}</text>
+      </navigator>
+    </block>
+  </view>
+</view>

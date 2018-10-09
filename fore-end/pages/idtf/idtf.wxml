@@ -1,0 +1,55 @@
+
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text' style='color:#66B3FF;'></text><text class='text-lg ml-xs'>身份认证</text>
+  </view>
+</view>
+ <!-- <view class="weui-cells__title" style='display: flex;justify-content: center;'>学生登录</view> -->
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">校园卡号</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" name='username'type='number' placeholder="请输入校园卡号" value='{{username}}' bindinput='userinput'/>
+                </view>
+            </view>
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">密码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" password='true'  name='password' placeholder="请输入密码"value='{{password}}' bindinput='passinput'/>
+                </view>
+            </view>
+
+            </view>
+
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">验证码</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"name='valcode' placeholder="验证码" value='{{valcode}}' bindinput='codeinput'/>
+                </view>
+                <view class="weui-cell__ft">
+                    <image class="weui-vcode-img" src="{{valcodeurl}}" style="width: 108px" bindtap='change_valcode'></image>
+                </view>
+            </view>
+        </view>
+        <view style='color:red;'>{{errlog}}</view>
+        <view class="weui-btn-area">
+        <view class="doc-main">
+            <button class='primary btn mt-sm block lg' style='background-color:#66B3FF;'bindtap='login'>登录</button>
+            <button class='gray btn block lg' style='margin-top:5%' bindtap='back'>返回</button>
+            </view>
+        </view>
+
+
+
+  
+
+

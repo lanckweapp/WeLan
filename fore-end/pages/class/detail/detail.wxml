@@ -1,0 +1,19 @@
+
+<view class="page">
+<view class="weui-cells__title"style='display: flex;justify-content: center;font-weight:bold;'>{{campname}}-{{buildname}}-第{{week}}周-{{weekday}}</view>
+<view class="weui-cells__title"style='display: flex;justify-content: center;color:red;'>蓝色是教室名称，绿色是对应教室为空的节数</view>
+
+    <view class="page__bd page__bd_spacing" wx:for="{{freelist}}" style="margin-top:20px;">
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder1">{{item.name}}</view></view>
+        </view>
+        
+        <view class="weui-flex" style='flex-wrap:wrap;'>
+            <view class="weui-flex__item" wx:for="{{item.freetime}}" wx:for-item="items" >
+            <view class="placeholder2" >{{items}}</view>
+            </view>
+        </view>
+
+    </view>
+
+</view>

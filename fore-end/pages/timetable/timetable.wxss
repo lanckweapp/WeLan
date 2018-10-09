@@ -1,0 +1,71 @@
+/* pages/timetable/timetable.wxss */
+.button {
+  font-size: 12pt;
+  background-color: #B0C4DE;
+  color: #0451A1;
+  text-align: center;
+}
+
+.picker {
+  
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  background-color: #B0C4DE;
+  color: #0451A1;
+}
+
+.top-left{
+  display: flex;
+  flex-direction: row;
+  font-size: 9pt;
+  width:50rpx;
+  height: 100rpx;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-text {
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  width: 50rpx;
+  height: 100rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.flex-item {
+  width: 95rpx;
+  height: 100px;
+}
+
+.kcb-item {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: top;
+  border-radius: 5px;
+}
+
+.smalltext {
+  font-size: 7pt;
+  color: #fff;
+  padding-left: 1px;
+}

@@ -1,0 +1,36 @@
+.li {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 34rpx;
+  width: 92%;
+  padding: 0 4%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.vshow{
+  display:block !important;
+}
+.vhide{
+  display:none !important;
+}
+.item-tit{
+  border:1px solid #eee;
+  height:85rpx;
+  line-height:80rpx;
+  font-size: 29rpx;
+  padding: 0 4%;
+}
+.item-con{
+  height:260rpx;
+  background:#eee;
+  font-size:24rpx;  
+  display:none;
+  padding: 0 4%;
+}
+
+.mini-btn{
+    margin-right: 4rpx;
+    height: 58rpx;
+}

@@ -1,0 +1,22 @@
+.placeholder1{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: rgb(0, 197, 205);
+    height: 2.3em;
+    line-height: 2.3em;
+    color: #ffffff;
+    border-radius: 15rpx;
+    box-shadow: 4rpx 4rpx 2rpx #888888;
+}
+.placeholder2{
+    margin: 5px;
+    padding: 0 10px;
+    text-align: center;
+    background-color: rgb(67, 205, 128);
+    height: 2.3em;
+    line-height: 2.3em;
+    color:#ffffff;
+    border-radius: 15rpx;
+    box-shadow: 4rpx 4rpx 2rpx #888888;
+}
