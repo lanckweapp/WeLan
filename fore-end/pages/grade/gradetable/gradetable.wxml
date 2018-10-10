@@ -1,6 +1,6 @@
 <block wx:if="{{stat=='success'}}">
 <view class="page">
-    <view class="li" >{{name}} 同学  {{year}}学年  {{term}}学期 个人成绩</view>
+    <view class="li" style='background-color:#66B3FF;color:white'>{{name}} 同学  {{year}}学年  {{term}}学期 个人成绩</view>
     <view class="li" >
     <view class="left">课程名称</view>
     <button class="weui-btn mini-btn" style='background-color:#66B3FF;' type="primary" size="mini"  data-index="0" bindtap="bindViewTap">

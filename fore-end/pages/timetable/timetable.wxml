@@ -1,7 +1,7 @@
 <!--pages/timetable/timetable.wxml-->
-<view class="button">
-  <picker class='picker' bindchange="bindPickerChange" value="{{index}}" range="{{week}}">
-    第 {{week[index]}} 周
+<view class="picker">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{week}}">
+      第 {{week[index]}} 周<text class='iconfont icon-unfold mr-xs'></text>
   </picker>
 </view>
 
@@ -14,7 +14,7 @@
 
 <scroll-view scroll-y="true" class="scroll">
   <view style="height:1200rpx;width:700rpx;display:flex;">
-    <view style="background-color:#B0C4DE;color:#0451A1;">
+    <view style="background-color:#66B3FF;color:#0451A1;">
       <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="left">
         {{item}}
       </view>
