@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   font-size: 34rpx;
-  width: 92%;
   padding: 0 4%;
   height: 100rpx;
   line-height: 100rpx;
@@ -23,7 +22,7 @@
   padding: 0 4%;
 }
 .item-con{
-  height:260rpx;
+  height:230rpx;
   background:#eee;
   font-size:24rpx;  
   display:none;
@@ -33,4 +32,5 @@
 .mini-btn{
     margin-right: 4rpx;
     height: 58rpx;
+    margin-top: 20rpx;
 }
