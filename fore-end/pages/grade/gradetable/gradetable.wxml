@@ -9,8 +9,11 @@
     </button>
     </view>
 
-<view class="item item-list" wx:for="{{gradelist}}">
-      <view class="item-tit">{{item.name}}</view><view class="item-tit" >总评：{{item.grade}}</view>
+<view wx:for="{{gradelist}}">
+    <view class='item'>
+        <view class="item-tit">{{item.name}}</view>
+        <view class='item-right'>总评：{{item.grade}}</view>
+    </view>
       <view class="item-con {{statusArr[0] ? 'vshow' : 'vhide'}}">
         <view>类型：{{item.type}}</view>
         <view>平时：{{item.usualgrade}}</view>
