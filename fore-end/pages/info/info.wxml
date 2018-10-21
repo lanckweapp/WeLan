@@ -43,4 +43,7 @@
                 <view class="weui-cell__ft">{{Class}}</view>
             </view>
         </view>
-        
+          <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="weui-footer__text">Copyright © 2018 兰客社区 技术支持</view>
+            <view class="weui-footer__text">2018  萃英在线  联合推广</view>
+          </view>

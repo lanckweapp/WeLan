@@ -112,6 +112,7 @@ Page({
     wx.navigateBack({
       delta: -1
     })
+  
   },
 
   userinput: function (e) {

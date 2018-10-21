@@ -37,7 +37,7 @@ Page({
           // }
           , {
             text: '联系我们',
-            route: '',
+            route: '/pages/contact/contact',
             image: '',
             icon: 'service'
           }
@@ -121,5 +121,17 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  test:function()
+  {
+    wx.request({
+    url: "https://lzu.abaoli.cn/wepr/service",
+      data: { "ToUserName": '', 'FromUserName': 'o9yUc5GJO861gznIWzWokX9rrJG8', "CreateTime": 1482048670, "MsgType": "text", "Content": "this is a test", "MsgId": 1234567890123456},
+    method: 'post',
+      header: {
+        'content-type': 'application/xml' // 默认值
+      }
+  
+  })
   }
 })

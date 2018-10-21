@@ -1,0 +1,28 @@
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text' style='color:#66B3FF;'></text>
+    <text class='text-lg ml-xs'>联系我们</text>
+  </view>
+</view>
+
+<view class="doc-main" style="margin-top:20%;">
+  <view class='text-center'>
+    <image src='https://lzu.abaoli.cn/welan/img/code.jpg' mode='widthFix' class='radius mr-df' style='width:280rpx;'></image>
+  </view>
+</view>
+
+  <view class=" weui-footer flex doc-box mv-sm p-df flex-direction text-center">
+    <view class="weui-footer__text">截屏后扫描图片中的二维码</view>
+    <view class="weui-footer__text">加入反馈交流群</view>
+    <view class="weui-footer__text">我们将和你一起见证微兰的成长</view>
+               
+  </view>
+    <view class="weui-btn-area">
+        <view class="doc-main">
+ <button class='gray btn block lg' style='margin-top:5%' bindtap='back'>返回</button>
+</view>
+</view>
+  <view class="weui-footer weui-footer_fixed-bottom">
+            <view class="weui-footer__text">Copyright © 2018 兰客社区 技术支持</view>
+            <view class="weui-footer__text">2018  萃英在线  联合推广</view>
+</view>
