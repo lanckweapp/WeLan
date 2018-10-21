@@ -1,3 +1,4 @@
+
 // pages/contact/contact.js
 Page({
 
@@ -62,5 +63,15 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  back: function () {
+    //退回首页
+    wx.navigateBack({
+      delta: -1
+    })
+
+  },
+
+
+
 })

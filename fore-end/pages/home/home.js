@@ -35,21 +35,19 @@ Page({
           //   image: '',
           //   icon: 'news'
           // }
-<<<<<<< HEAD
+
           , {
             text: '联系我们',
             route: '/pages/contact/contact',
             image: '',
             icon: 'service'
           }
-=======
           //, {
             //text: '联系我们',
             //route: '',
             //image: '',
             //icon: 'service'
           //}
->>>>>>> f1aa74a969063ebf2ae3281d11b5c53931337732
           // , {
           //   text: '添加',
           //   route: '',
