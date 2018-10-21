@@ -14,13 +14,47 @@
 .vhide{
   display:none !important;
 }
-.item-tit{
+
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 85rpx;
   border:1px solid #eee;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.item-tit{
+  display: flex -webkit-box;
+  flex-direction: row;
+  justify-content: space-between;
   height:85rpx;
   line-height:80rpx;
-  font-size: 29rpx;
-  padding: 0 4%;
+  font-size: 28rpx;
+  padding:0 1%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:1;
 }
+
+.item-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 28rpx;
+  line-height:80rpx;
+  height:85rpx;
+  padding:0 1% 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .item-con{
   height:230rpx;
   background:#eee;

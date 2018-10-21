@@ -6,12 +6,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    colorArrays: ["#FFA07A", "#ADE931", "#7FC8EB", "#F18585", "#5AD441", "#FAA785", "#DDA0DD", "#FFD700","#6495ED"],
+    colorArrays: ["#FFA07A", "#32CD32", "#7FC8EB", "#F18585", "#7ec9c9", "#FAA785", "#DDA0DD", "#FFD700","#6495ED"],
 
     timeList:[],
     nowList:[],
     aList:[],
     month:'',
+    modalHidden: true,
+    name:null,
+    classroom:null,
+    teacher: null,
+    whichDay: null,
+    classBegin: null,
+    duration: null,
 
     week: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18'],
     weekArray: [
@@ -37,6 +44,20 @@ Page({
     ],
     index: 0,
 
+  },
+
+  showCard: function (e) {
+    console.log(e.currentTarget.dataset)
+      var that = this
+      that.setData({
+        modalHidden:false,
+        name: e.currentTarget.dataset.name,
+        classroom: e.currentTarget.dataset.classroom,
+        teacher: e.currentTarget.dataset.teacher,
+        whichDay: e.currentTarget.dataset.whichday,
+        classBegin: e.currentTarget.dataset.classbegin,
+        duration: e.currentTarget.dataset.duration,
+      })
   },
 
   /**
@@ -126,7 +147,7 @@ Page({
   /**通过周数筛选本周课程*/
   getlist: function () {
     this.data.nowList = this.data.timeList.slice(0)
-    for (var i in this.data.nowList) {
+    for (var i = this.data.nowList.length - 1; i >= 0; i--) {
       if (this.data.nowList[i].weekList.indexOf(Number(this.data.index) + 1) == -1) {
         this.data.nowList.splice(i, 1, )
       }
@@ -137,4 +158,16 @@ Page({
     }
     console.log(this.data.aList)
   },
+
+  modalChange: function (e) {
+    this.setData({
+      modalHidden: true
+    })
+  },
+  modalTap: function (e) {
+    this.setData({
+      modalHidden: false
+    })
+  },
+
 })

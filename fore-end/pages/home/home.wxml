@@ -22,7 +22,7 @@
 
 
 <swiper class='swiper-bg' indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" indicator-active-color="#ff6600">
-  <swiper-item wx:for="{{movies}}">
+  <swiper-item wx:for="{{movies}}" wx:key="id">
     <view class='shadow-alice'>
       <image src="{{movies[index].url}}" mode='aspectFill' />
     </view>

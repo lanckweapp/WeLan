@@ -1,13 +1,10 @@
 .placeholder1{
-    margin: 5px;
     padding: 0 10px;
     text-align: center;
-    background-color: rgb(0, 197, 205);
     height: 2.3em;
     line-height: 2.3em;
-    color: #ffffff;
-    border-radius: 15rpx;
-    box-shadow: 4rpx 4rpx 2rpx #888888;
+    color: #888888;
+    font-weight: bold;
 }
 .placeholder2{
     margin: 5px;
@@ -18,5 +15,12 @@
     line-height: 2.3em;
     color:#ffffff;
     border-radius: 15rpx;
-    box-shadow: 4rpx 4rpx 2rpx #888888;
+    box-shadow: 2rpx 2rpx 1rpx #888888;
+}
+
+.card{
+  margin: 40rpx 4% 0 4%;
+  padding:20rpx 4%;
+  background-color: #eee;
+  box-shadow: 4rpx 4rpx 2rpx #888888;
 }

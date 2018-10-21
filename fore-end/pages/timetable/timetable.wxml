@@ -1,34 +1,47 @@
 <!--pages/timetable/timetable.wxml-->
 <view class="picker">
   <picker style='color:white' bindchange="bindPickerChange" value="{{index}}" range="{{week}}">
-      第 {{week[index]}} 周<text class='iconfont icon-unfold mr-xs'></text>
+    第 {{week[index]}} 周
+    <text class='iconfont icon-unfold mr-xs'></text>
   </picker>
 </view>
 
 <view class="top" style='color:white'>
-    <view class='top-left'>{{month}}月</view>
-    <view class='top-right'>
+  <view class='top-left'>{{month}}月</view>
+  <view class='top-right'>
     <view wx:for="{{['一','二','三','四','五','六','日']}}" class="top-text">周{{item}}</view>
-    </view>
+  </view>
 </view>
 
 <scroll-view scroll-y="true" class="scroll">
   <view style="height:1200rpx;width:700rpx;display:flex;">
     <view style="background-color:#66B3FF;color:#0451A1;">
       <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="left" style='color:white'>
-        {{item}}
-      </view>
-    </view>
-    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" >
-      <view style="width:750rpx;margin-top:{{(index+1)*100}}rpx; position:absolute;border-bottom:1rpx solid {{'lightgray'}};">
-    </view>
-  </view>
+        <view style="background-color:#66B3FF;color:white;">
+          <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}" class="left">
 
-    <view wx:for="{{aList}}">
-      <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.whichDay-1)*100}}rpx;margin-top:{{(item.classBegin-1)*100+5}}rpx;height:{{item.duration*100-5}}rpx;background-color:{{colorArrays[index%9]}};border-radius:5rpx">
-        <view class="smalltext" >{{item.name}}<view class='smalltext'>{{item.classroom}}</view></view>
+            {{item}}
+          </view>
+        </view>
+        <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}">
+          <view style="width:750rpx;margin-top:{{(index+1)*100}}rpx; position:absolute;border-bottom:1rpx solid {{'lightgray'}};">
+          </view>
+        </view>
 
+        <view wx:for="{{aList}}" wx:key="name">
+          <view class="flex-item kcb-item" data-statu="open" data-index="{{index}}" data-name='{{item.name}}' data-classroom='{{item.classroom}}' data-teacher='{{item.teacher}}' data-whichDay='{{item.whichDay}}' data-classBegin='{{item.classBegin}}' data-duration='{{item.duration}}'
+            style="margin-left:{{(item.whichDay-1)*100}}rpx;margin-top:{{(item.classBegin-1)*100+5}}rpx;height:{{item.duration*100-5}}rpx;background-color:{{colorArrays[index%9]}};border-radius:5rpx" catchtap='showCard'>
+            <view class="smalltext">{{item.name}}
+              <view class='smalltext'>{{item.classroom}}</view>
+            </view>
+          </view>
+        </view>
       </view>
-    </view>
-  </view>
 </scroll-view>
+
+<modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalChange">
+  <view>课程名称：{{name}}</view>
+  <view>教室：{{classroom}}</view>
+  <view>老师：{{teacher}}</view>
+  <view>上课时间：星期{{whichDay}}第{{classBegin}}节开始,{{duration}}节课</view>
+</modal>

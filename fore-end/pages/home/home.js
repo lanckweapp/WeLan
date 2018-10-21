@@ -35,12 +35,21 @@ Page({
           //   image: '',
           //   icon: 'news'
           // }
+<<<<<<< HEAD
           , {
             text: '联系我们',
             route: '/pages/contact/contact',
             image: '',
             icon: 'service'
           }
+=======
+          //, {
+            //text: '联系我们',
+            //route: '',
+            //image: '',
+            //icon: 'service'
+          //}
+>>>>>>> f1aa74a969063ebf2ae3281d11b5c53931337732
           // , {
           //   text: '添加',
           //   route: '',
@@ -50,15 +59,19 @@ Page({
         ],
         movies:[
           {
+            id: 1,
             url:'http://news.lzu.edu.cn/FHup/images/201601/01-02_010151-1.jpg'
           },
           {
+            id: 2,
             url:'http://news.lzu.edu.cn/FHup/images/201603/03-31_122643-9.JPG'
           },
           {
+            id: 3,
             url:'http://www.lzu.edu.cn/files/banner/content/xiaofeng.jpg'
           },
           {
+            id: 4,
             url:'http://news.lzu.edu.cn/FHup/images/201604/04-20_160958-9.jpg'
           }
         ]
